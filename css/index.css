@@ -141,6 +141,7 @@ h1,
 h2,
 h3 {
   font-family: 'Indie Flower', cursive;
+  padding-bottom: 20px;
 }
 h1 {
   font-size: 4rem;
@@ -212,4 +213,78 @@ header .nav-container .nav-login .register {
 }
 header .nav-container .nav-login .login {
   padding-right: 1em;
+}
+.home .content-header {
+  background-color: yellow;
+}
+.home .content-header p {
+  margin-bottom: 20px;
+}
+.home .content-video {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-color: #f3cfd5;
+  margin-bottom: 30px;
+}
+.home .content-video iframe {
+  width: 800px;
+  height: 400px;
+}
+.home .content-section {
+  margin: 3opx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.home .content-section .image-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.home .content-section .image-content img {
+  border-radius: 10px;
+}
+.home .content-reverse .image-content img {
+  border-radius: 10px;
+}
+.home .content-option {
+  background-color: #80d880;
+  margin-bottom: 30px;
+}
+.home .content-option img {
+  width: 100%;
+  height: 30%;
+}
+.home .content-pick {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content-pick .option {
+  width: 30%;
+  margin-bottom: 30px;
+}
+.home .content-pick .option .button {
+  display: block;
+  background-color: green;
+  color: white;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 0 10px;
+  text-align: center;
+  width: 80%;
+}
+.home .content-pick .option .button:hover {
+  background-color: pink;
+  color: green;
 }
