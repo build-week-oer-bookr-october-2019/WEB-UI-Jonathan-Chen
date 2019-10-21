@@ -21,13 +21,17 @@
                 <nav class="navbar">
                     <a href="#">Home</a>
                     <a href="#">About</a>
-                </nav>                
-                <h1>OER Bookr</h1>
-                <nav class="navbar">
                     <a href="#">Product</a>
                     <a href="#">Contact</a>
                 </nav>
-                <button type="button">Log In!</button>
+                <div class="nav-login">
+                    <form class="register">
+                        <button type="nav-button">Register</button>
+                    </form>
+                    <form class="login">
+                        <button type="nav-button">Log In</button>
+                    </form>
+                </div>
             </div>
         </header>
         
@@ -41,7 +45,9 @@
             </section>
 
             <section class="content-video">
-                <iframe width="797" height="384" src="https://www.youtube.com/embed/n3brytBOv6E?list=PLGmxyVGSCDKvmLInHxJ9VdiwEb82Lxd2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/n3brytBOv6E?list=PLGmxyVGSCDKvmLInHxJ9VdiwEb82Lxd2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </section>
 
             <section class="content-section">
@@ -55,11 +61,14 @@
                     </p>
                 </div>
                 <div class="image-content inverse-content">
-                    <img src="img/placeholder.jpeg" alt="Placeholding image for now" width=500px>
+                    <img src="img/cat.jpeg" alt="Placeholding image for now">
                 </div>
             </section>
 
-            <section class="content-section">
+            <section class="content-section content-reverse">
+                <div class="image-content">
+                    <img src="img/cat.jpeg" alt="Placeholding image for now">
+                </div>
                 <div class="text-content">
                     <h2>Highlight 2</h2>
                     <p>Welcome message and description of application goes here. For the lack of a better word I call them hangy downs. 
@@ -68,9 +77,6 @@
                     <p>Just make a decision and let it go. You have to allow the paint to break to make 
                         it beautiful. The man who does the best job is the one who is happy at his job. Here's another little happy bush
                     </p>
-                </div>
-                <div class="image-content">
-                    <img src="img/placeholder.jpeg" alt="Placeholding image for now" width=500px>
                 </div>
             </section>
 
@@ -85,7 +91,7 @@
                     </p>
                 </div>
                 <div class="image-content">
-                    <img src="img/placeholder.jpeg" alt="Placeholding image for now" width=500px>
+                    <img src="img/cat.jpeg" alt="Placeholding image for now">
                 </div>
             </section>
 
@@ -96,7 +102,7 @@
                     it beautiful. 
                 </p>
                 <div >
-                    <img src="img/placeholder.jpeg" alt="Placeholding image for now" width=500px>
+                    <img src="img/placeholder2.jpeg" alt="Placeholding image 2 for now">
                 </div>
             </section>
 
@@ -123,16 +129,17 @@
                     <div class="button">Sign Me Up!</div>
                 </div>
             </section>
-
-            <footer>
-                <h3>Contact</h3>
-                <ul>
-                    <li>Email</li>
-                    <li>Phone</li>
-                    <li><address>5555 Random St. Random City, RN 11111</address></li>
-                </ul>
-            </footer>
-
         </div> <!-- End of main container -->
+
+        <footer>
+            <div class="footer-title">
+                <h3>Contact</h3>
+            </div>
+            <div class="contact">    
+                <a href="#">Email</a>
+                <a href="#">Phone</a>
+                <address>5555 Random St. Random City, RN 11111</address>
+            </div>
+        </footer>
     </body>
 </html>
