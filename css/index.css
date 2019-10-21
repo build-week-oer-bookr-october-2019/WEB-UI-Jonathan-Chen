@@ -256,7 +256,7 @@ header .nav-container .nav-login .login {
 }
 .home .content-option {
   background-color: #80d880;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .home .content-option img {
   width: 100%;
@@ -287,4 +287,21 @@ header .nav-container .nav-login .login {
 .home .content-pick .option .button:hover {
   background-color: pink;
   color: green;
+}
+footer {
+  max-width: 100%;
+  width: 100%;
+  background: #FFEBCD;
+  padding: 10px 0 30px 10%;
+  font-size: 1.6rem;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .contact a {
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
 }
