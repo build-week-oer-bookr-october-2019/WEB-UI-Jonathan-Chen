@@ -10,8 +10,7 @@
     }
 
     .content-video {
-        display: flex;
-        justify-content: center;
+        .position(flex, row, center);
         height: auto;
         margin-bottom: 30px;
         iframe {
@@ -53,15 +52,13 @@
         padding: 0 1%;
         img {
             width: 100%;
-            height: 30%;
         }
     }
 
     .content-pick {
         padding-top: 30px;
         padding-left: 1%;
-        display: flex;
-        justify-content: space-between;
+        .position(flex, row, space-between);
         .option {
             width: 30%;
             margin-bottom: 30px;
