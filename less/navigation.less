@@ -4,8 +4,11 @@ header {
     height: 8em;
     display: flex;
     justify-content: center;
-    background: rgb(96, 212, 241);
+    background-image: url("../img/placeholder2.jpeg");
     margin-bottom: 2em;
+    img {
+        margin-left: 10%;
+    }
     .nav-container {
         max-width: 80%;
         width: 100%;;
@@ -19,9 +22,12 @@ header {
             align-items: center;
             a {
                 font-size: 2.0rem;
+                font-family: @title-font;
                 text-decoration: none;
                 padding: 1.2rem 2.4rem;
+                margin: 0 15px;
                 color: rgb(206, 76, 24);
+                background-color: yellow;
             }
             a:hover {
                 color: white;
@@ -34,6 +40,7 @@ header {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            margin-right: 15%;
             .register {
                 padding-right: 1em;
             }
