@@ -1,45 +1,39 @@
 // LESS markup for naviation bar
 header {
-    width: 100%;
-    height: 8em;
-    display: flex;
-    justify-content: center;
-    background: rgb(96, 212, 241);
-    margin-bottom: 2em;
-    .nav-container {
-        max-width: 80%;
-        width: 100%;;
-        display: flex;
-        justify-content: space-between;
-        .navbar {
-            max-width: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            a {
-                font-size: 2.0rem;
-                text-decoration: none;
-                padding: 1.2rem 2.4rem;
-                color: rgb(206, 76, 24);
-            }
-            a:hover {
-                color: white;
-                background-color: rgb(25, 108, 233);
-            }
+    width: 80%;
+    height: 12em;
+    .position(flex, row, space-between);
+    align-items: center;
+    background-image: url("../img/placeholder2.jpeg");
+    margin-left: 10%;
+    position: fixed;
+    img {
+        width: 12rem;
+    }
+    .navbar {
+        .position(flex,row, flex-start);
+        align-items: center;
+        margin-left: -20px;
+        a {
+            font-size: 2.0rem;
+            font-family: @title-font;
+            text-decoration: none;
+            padding: 1.2rem 2.4rem;
+            margin-right: 20px;
+            background-color: yellow;
         }
-        .nav-login {
-            max-width: 30%;
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            .register {
-                padding-right: 1em;
-            }
-            .login {
-                padding-right: 1em;
-            }
+        a:hover {
+            color: white;
+            background-color: rgb(25, 108, 233);
+        }
+    }
+    .nav-login {
+        .position(flex, row, flex-end);
+        align-items: center;
+        margin-right: 30px;
+        .button {
+            padding-right: 1em;
+            .custom-btn(70%, rgb(11, 105, 212));
         }
     }
 }
