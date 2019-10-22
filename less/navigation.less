@@ -6,8 +6,19 @@ header {
     align-items: center;
     background-image: url("../img/placeholder2.jpeg");
     position: fixed;
+    @media @mobile {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        .position(flex, column, center);
+        background-image: none;
+        position: relative;
+    }
     img {
         width: 12rem;
+        @media @mobile {
+            display: none;
+        }
     }
     .navbar {
         .position(flex,row, flex-start);
@@ -15,6 +26,11 @@ header {
         margin-left: -20px;
         @media @tablet {
             margin-left: 20px;
+        }
+        @media @mobile {
+            .position(flex, column, center);
+            width: 100%;
+            margin-left: 0;
         }
         a {
             font-size: 2.0rem;
@@ -29,6 +45,14 @@ header {
                 background-color: orange;
                 padding: 1.2rem 1.6rem;
             }
+            @media @mobile {
+                margin-right: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                background-color: orange;
+                border: 1px solid rgb(74, 55, 245);
+            }
         }
         a:hover {
             color: white;
@@ -42,9 +66,19 @@ header {
         @media @tablet {
             margin-right: 20px;
         }
+        @media @mobile {
+            .position(flex, column, center);
+            margin-right: 0;
+        }
         .button {
             padding-right: 1em;
             .custom-btn(70%, rgb(11, 105, 212));
+            @media @mobile {
+                .custom-btn(100%, rgb(11, 105, 212));
+                padding: 10px 220px;
+                border-radius: 0;
+                border: 1px solid orange;
+            }
         }
     }
 }

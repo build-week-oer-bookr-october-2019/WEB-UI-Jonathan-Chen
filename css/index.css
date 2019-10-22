@@ -187,8 +187,25 @@ header {
   background-image: url("../img/placeholder2.jpeg");
   position: fixed;
 }
+@media only screen and (max-width: 500px) {
+  header {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: none;
+    position: relative;
+  }
+}
 header img {
   width: 12rem;
+}
+@media only screen and (max-width: 500px) {
+  header img {
+    display: none;
+  }
 }
 header .navbar {
   display: flex;
@@ -200,6 +217,15 @@ header .navbar {
 @media only screen and (max-width: 999px) and (min-width: 501px) {
   header .navbar {
     margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
   }
 }
 header .navbar a {
@@ -218,6 +244,16 @@ header .navbar a {
     padding: 1.2rem 1.6rem;
   }
 }
+@media only screen and (max-width: 500px) {
+  header .navbar a {
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    border: 1px solid #4a37f5;
+  }
+}
 header .navbar a:hover {
   color: white;
   background-color: #196ce9;
@@ -232,6 +268,14 @@ header .nav-login {
 @media only screen and (max-width: 999px) and (min-width: 501px) {
   header .nav-login {
     margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header .nav-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0;
   }
 }
 header .nav-login .button {
@@ -252,9 +296,36 @@ header .nav-login .button:hover {
   background-color: pink;
   color: #0b69d4;
 }
+@media only screen and (max-width: 500px) {
+  header .nav-login .button {
+    display: block;
+    background-color: #0b69d4;
+    color: white;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 0 10px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 220px;
+    border-radius: 0;
+    border: 1px solid orange;
+  }
+  header .nav-login .button:hover {
+    background-color: pink;
+    color: #0b69d4;
+  }
+}
 .home {
   padding-top: 14em;
   background-image: url("../img/background.jpeg");
+}
+@media only screen and (max-width: 500px) {
+  .home {
+    padding-top: none;
+  }
 }
 .home .content-header {
   padding: 0 1%;
@@ -273,6 +344,11 @@ header .nav-login .button:hover {
   width: 800px;
   height: 400px;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-video iframe {
+    width: 100%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   padding: 0 1%;
@@ -283,16 +359,42 @@ header .nav-login .button:hover {
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2.5vw;
+    width: 95%;
+  }
+}
 .home .content-section .text-content {
   width: 58%;
   padding-right: 1%;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 90%;
+  }
 }
 .home .content-section .image-content {
   width: 40%;
   padding-left: 1%;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-section .image-content {
+    width: 90%;
+  }
+}
 .home .content-section .image-content img {
   border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }
 .home .content-reverse .image-content img {
   border-radius: 10px;
@@ -301,8 +403,21 @@ header .nav-login .button:hover {
   margin-bottom: 20px;
   padding: 0 1%;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-option {
+    padding-top: 10px;
+    color: #a15ae2;
+    background-color: honeydew;
+    margin-bottom: 0;
+  }
+}
 .home .content-option img {
   width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-option img {
+    height: 150px;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -311,9 +426,26 @@ header .nav-login .button:hover {
   flex-direction: row;
   justify-content: space-between;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: honeydew;
+  }
+}
 .home .content-pick .option {
   width: 30%;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-pick .option {
+    padding-left: 5%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .home .content-pick .option .button {
   display: block;
@@ -331,6 +463,12 @@ header .nav-login .button:hover {
 .home .content-pick .option .button:hover {
   background-color: pink;
   color: green;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-pick .option .button {
+    margin-left: 10%;
+    border: 1px solid black;
+  }
 }
 footer {
   max-width: 100%;

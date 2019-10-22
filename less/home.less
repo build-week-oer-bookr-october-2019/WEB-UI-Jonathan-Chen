@@ -2,6 +2,9 @@
 .home {
     padding-top: 14em;
     background-image: url("../img/background.jpeg");
+    @media @mobile {
+        padding-top: none;
+    }
     .content-header {
         padding: 0 1%;
         p {
@@ -16,6 +19,9 @@
         iframe {
             width: 800px;
             height: 400px;
+            @media @mobile {
+                width: 100%;
+            }
         }
     }
 
@@ -26,13 +32,24 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 40px;
+        @media @mobile {
+            .position(flex, column, center);
+            margin-left: 2.5vw;
+            width: 95%;
+        }
         .text-content {
             width: 58%;
             padding-right: 1%;
+            @media @mobile {
+                width: 90%;
+            }
         }
         .image-content {
             width: 40%;
             padding-left: 1%;
+            @media @mobile {
+                width: 90%;
+            }
             img {
                 border-radius: 10px;
             }
@@ -40,6 +57,9 @@
     }
 
     .content-reverse {
+        @media @mobile {
+            .position(flex, column-reverse, center);
+        }
         .image-content {
             img {
                 border-radius: 10px;
@@ -50,8 +70,17 @@
     .content-option {
         margin-bottom: 20px;
         padding: 0 1%;
+        @media @mobile {
+            padding-top: 10px;
+            color: rgb(161, 90, 226);
+            background-color: honeydew;
+            margin-bottom: 0;
+        }
         img {
             width: 100%;
+            @media @mobile {
+                height: 150px;
+            }
         }
     }
 
@@ -59,11 +88,24 @@
         padding-top: 30px;
         padding-left: 1%;
         .position(flex, row, space-between);
+        @media @mobile {
+            .position(flex, column, center);
+            background-color: honeydew;
+        }
         .option {
             width: 30%;
             margin-bottom: 30px;
+            @media @mobile {
+                padding-left: 5%;
+                width: 95%;
+                .position(flex, column, center);
+            }
             .button {
                 .custom-btn(80%, green);
+                @media @mobile {
+                    margin-left: 10%;
+                    border: 1px solid black;
+                }
             }
         }
     }
