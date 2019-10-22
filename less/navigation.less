@@ -1,19 +1,37 @@
 // LESS markup for naviation bar
 header {
-    width: 80%;
+    width: 100%;
     height: 12em;
     .position(flex, row, space-between);
     align-items: center;
     background-image: url("../img/placeholder2.jpeg");
-    margin-left: 10%;
     position: fixed;
+    @media @mobile {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        .position(flex, column, center);
+        background-image: none;
+        position: relative;
+    }
     img {
         width: 12rem;
+        @media @mobile {
+            display: none;
+        }
     }
     .navbar {
         .position(flex,row, flex-start);
         align-items: center;
         margin-left: -20px;
+        @media @tablet {
+            margin-left: 20px;
+        }
+        @media @mobile {
+            .position(flex, column, center);
+            width: 100%;
+            margin-left: 0;
+        }
         a {
             font-size: 2.0rem;
             font-family: @title-font;
@@ -21,6 +39,20 @@ header {
             padding: 1.2rem 2.4rem;
             margin-right: 20px;
             background-color: yellow;
+            @media @tablet {
+                font-size: 1.6rem;
+                margin-right: 10px;
+                background-color: orange;
+                padding: 1.2rem 1.6rem;
+            }
+            @media @mobile {
+                margin-right: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                background-color: orange;
+                border: 1px solid rgb(74, 55, 245);
+            }
         }
         a:hover {
             color: white;
@@ -31,9 +63,22 @@ header {
         .position(flex, row, flex-end);
         align-items: center;
         margin-right: 30px;
+        @media @tablet {
+            margin-right: 20px;
+        }
+        @media @mobile {
+            .position(flex, column, center);
+            margin-right: 0;
+        }
         .button {
             padding-right: 1em;
             .custom-btn(70%, rgb(11, 105, 212));
+            @media @mobile {
+                .custom-btn(100%, rgb(11, 105, 212));
+                padding: 10px 220px;
+                border-radius: 0;
+                border: 1px solid orange;
+            }
         }
     }
 }
