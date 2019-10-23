@@ -4,7 +4,7 @@ header {
     height: 12em;
     .position(flex, row, space-between);
     align-items: center;
-    background-image: url("../img/placeholder2.jpeg");
+    background-color: #fcddbc;
     position: fixed;
     @media @mobile {
         max-width: 500px;
@@ -38,11 +38,12 @@ header {
             text-decoration: none;
             padding: 1.2rem 2.4rem;
             margin-right: 20px;
-            background-color: yellow;
+            background-color: #c8ab8c;
+            color: black;
             @media @tablet {
                 font-size: 1.6rem;
                 margin-right: 10px;
-                background-color: orange;
+                background-color: #c8ab8c;
                 padding: 1.2rem 1.6rem;
             }
             @media @mobile {
@@ -50,8 +51,8 @@ header {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                background-color: orange;
-                border: 1px solid rgb(74, 55, 245);
+                background-color: #c8ab8c;
+                border: 1px solid rgb(235, 215, 173);
             }
         }
         a:hover {
@@ -73,12 +74,17 @@ header {
         }
         .button {
             padding-right: 1em;
-            .custom-btn(70%, rgb(11, 105, 212));
+            .custom-btn(70%, #c8ab8c);
+            border: 1px solid rgb(235, 215, 173);
             @media @mobile {
-                .custom-btn(100%, rgb(11, 105, 212));
+                .custom-btn(100%, #c8ab8c);
                 padding: 10px 0;
                 border-radius: 0;
-                border: 1px solid orange;
+                border: 1px solid rgb(235, 215, 173);
+            }
+            a {
+                text-decoration: none;
+                color: black;
             }
         }
     }
