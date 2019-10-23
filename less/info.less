@@ -1,0 +1,42 @@
+// This contains the LESS markup for about.html page
+.about-container {
+    .position(flex, column, center);
+    align-self: center;
+    padding-top: 14em;
+    padding-bottom: 3em;
+    background-image: url("../img/background.jpeg");
+    .team-intro {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 25px;
+    }
+
+    .team-member {
+        width: 90%;
+        margin-left: 5%;
+        .position(flex, row, center);
+        align-items: center;
+        margin: 20px 0;
+        .member-left{
+            max-width: 100%;
+            width: 50%;
+            padding-left: 2%;
+        }
+        .member-right {
+            max-width: 100%;
+            width: 45%;
+            padding-left: 3%;
+            .icons {
+                margin-left: 20px;
+                margin-top: 10px;
+                .linkedin{
+                    .linkedIn();
+                    margin-right: 10px;
+                }
+                .github {
+                    .github();
+                }
+            }
+        }
+    }
+}
