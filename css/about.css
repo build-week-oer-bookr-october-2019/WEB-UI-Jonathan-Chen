@@ -275,6 +275,7 @@ header .nav-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     margin-right: 0;
   }
 }
@@ -309,7 +310,7 @@ header .nav-login .button:hover {
     margin: 0 10px;
     text-align: center;
     width: 100%;
-    padding: 10px 220px;
+    padding: 10px 0;
     border-radius: 0;
     border: 1px solid orange;
   }
@@ -327,29 +328,86 @@ header .nav-login .button:hover {
   padding-bottom: 3em;
   background-image: url("../img/background.jpeg");
 }
+@media only screen and (max-width: 999px) and (min-width: 501px) {
+  .about-container {
+    background-image: url("../img/background.jpeg");
+    padding-bottom: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-container {
+    background-image: url("../img/backgroundmobile.jpeg");
+  }
+}
 .about-container .team-intro {
   width: 90%;
   margin-left: 5%;
   margin-bottom: 25px;
 }
+@media only screen and (max-width: 500px) {
+  .about-container .team-intro {
+    margin-bottom: 10px;
+  }
+}
 .about-container .team-member {
   width: 90%;
-  margin-left: 5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+  margin-left: 5%;
+}
+@media only screen and (max-width: 999px) and (min-width: 501px) {
+  .about-container .team-member {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3.5%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-container .team-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3.5%;
+  }
 }
 .about-container .team-member .member-left {
   max-width: 100%;
   width: 50%;
   padding-left: 2%;
 }
+@media only screen and (max-width: 999px) and (min-width: 501px) {
+  .about-container .team-member .member-left {
+    width: 70%;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-container .team-member .member-left {
+    width: 80%;
+    padding-left: 0;
+  }
+}
 .about-container .team-member .member-right {
   max-width: 100%;
   width: 45%;
   padding-left: 3%;
+}
+@media only screen and (max-width: 999px) and (min-width: 501px) {
+  .about-container .team-member .member-right {
+    padding-top: 25px;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-container .team-member .member-right {
+    width: 80%;
+    padding-top: 5px;
+  }
 }
 .about-container .team-member .member-right .icons {
   margin-left: 20px;
@@ -365,6 +423,17 @@ header .nav-login .button:hover {
   border-radius: 8px;
   margin-right: 10px;
 }
+@media tablet {
+  .about-container .team-member .member-right .icons .linkedin {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-container .team-member .member-right .icons .linkedin {
+    margin-right: 0px;
+    width: 60%;
+  }
+}
 .about-container .team-member .member-right .icons .github {
   margin-top: 15px;
   padding: 10px 10px;
@@ -373,6 +442,19 @@ header .nav-login .button:hover {
   background-color: #211F1F;
   color: white;
   border-radius: 8px;
+}
+@media only screen and (max-width: 500px) {
+  .about-container .team-member .member-right .icons .github {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-container .team-member .member-right .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+  }
 }
 footer {
   max-width: 100%;

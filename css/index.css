@@ -275,6 +275,7 @@ header .nav-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     margin-right: 0;
   }
 }
@@ -309,7 +310,7 @@ header .nav-login .button:hover {
     margin: 0 10px;
     text-align: center;
     width: 100%;
-    padding: 10px 220px;
+    padding: 10px 0;
     border-radius: 0;
     border: 1px solid orange;
   }
