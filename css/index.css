@@ -424,7 +424,6 @@ header .nav-login .button a {
 }
 .home .content-option img {
   width: 100%;
-  height: 250px;
 }
 @media only screen and (max-width: 500px) {
   .home .content-option img {
@@ -475,6 +474,10 @@ header .nav-login .button a {
 .home .content-pick .option .button:hover {
   background-color: #196ce9;
   color: #c8ab8c;
+}
+.home .content-pick .option .button a {
+  text-decoration: none;
+  color: white;
 }
 @media only screen and (max-width: 500px) {
   .home .content-pick .option .button {
