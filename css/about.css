@@ -160,7 +160,7 @@ h3 {
   font-size: 2.4rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.6;
   padding-bottom: 10px;
 }
@@ -377,7 +377,7 @@ header .nav-login .button a {
 }
 .about-container .team-member .member-left {
   max-width: 100%;
-  width: 50%;
+  width: 450px;
   padding-left: 2%;
 }
 @media only screen and (max-width: 999px) and (min-width: 501px) {
